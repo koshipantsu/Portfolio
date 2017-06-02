@@ -1,0 +1,57 @@
+/*文字サイズ*/
+.font-size__over{
+  font-size: 3vw;
+}
+
+.font-size__middle--max{
+  font-size: 2.5vw;
+}
+
+.font-size__max{
+  font-size: 1.5vw;
+}
+
+.font-size__middle{
+  font-size: 1.2vw;
+}
+
+.font-size__normal{
+  font-size: 1vw;
+}
+
+.font-size__medium{
+  font-size: 1.3vw;
+}
+
+.font-saize__middle--small{
+  font-size: 1vw;
+}
+
+.font-size__small{
+  font-size: 0.8vw;
+}
+
+.font-size__min{
+  font-size: 0.5vw;
+}
+
+/*文字間*/
+.letter-space__max{
+  letter-spacing: 0.5em;
+}
+
+.letter-space__medium{
+  letter-spacing: 0.2em;
+}
+
+.yu-mincho{
+  font-family: "Yu Mincho", "YuMincho";
+}
+
+.yu-gothic{
+  font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+}
+
+.avenir{
+  font-family: "Avenir Next Condensed";
+}

@@ -1,0 +1,354 @@
+html, ul{
+  margin: 0;
+  padding: 0
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next Condensed", "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+.top{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.top a{
+  color: #000;
+}
+
+.hero{
+  display: inline-block;
+  width: 80%;
+  height: 15vw;
+  position: relative;
+  top: 50%;
+  margin-top: -8vw;
+  left: 10%;
+}
+
+.title{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  margin-top: -1.5vw;
+}
+
+.hero img{
+  height: 20vw;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  margin-top: -10vw;
+}
+
+.scroll{
+  width: 100%;
+  position: absolute;
+  bottom: 5vh;
+}
+
+.scroll__link{
+  width: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.scroll img{
+  width: 30px;
+}
+
+.scroll__txt{
+  margin: 0;
+  font-weight: 400;
+}
+
+.nav{
+  width: 80%;
+  height: 25vh;
+  margin: 0 auto;
+}
+
+.nav li{
+  margin-bottom: 2vh;
+  margin-left: 0;
+}
+
+.nav li:first-child{
+  padding-top: 10vh;
+  content: "";
+}
+
+.nav a{
+  color: #000;
+}
+
+.works{
+  width: 100%;
+  margin: 0;
+  padding-top: 5vw;
+}
+
+.works a{
+  color: #000;
+}
+
+.contents-nav{
+  width: 100%;
+  height: 4.5vw;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.contents-nav ul{
+  height: 8vh;
+  padding-top: 3vh;
+  padding-left: 10%;
+}
+
+/*ナビの固定*/
+.c-nav__fixed{
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.fixed_not{
+  position: relative;
+  top: 0;
+}
+
+.c-nav__fixed-bt{
+  position: absolute;
+  bottom: 30vh;
+}
+/**/
+
+.contents-nav ul::before{
+  content: "▶︎";
+  font-size: 0.8em;
+}
+
+.contents-nav li{
+  display: inline-block;
+  top: 50%;
+  margin-top: -2.5em;
+}
+
+.contents-nav li::after{
+  content: "/";
+  margin-left: 10px;
+}
+
+.contents-nav li:last-child::after{
+  content: "";
+}
+
+/*web*/
+.web{
+  height: 23vw;
+  /*background: pink;*/
+}
+
+.web__contents{
+  width: 95%;
+  height: 10vh;
+  margin: 0 auto 0 auto;
+  padding-top: 10vw;
+  display: table;
+}
+
+.web li{
+  display: inline-block;
+  margin: 0 3.17% 0 0;
+}
+
+.web li:first-child{
+  content: "";
+  margin-left: 0;
+}
+
+.web li:last-child{
+  width: 0;
+  content: "";
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.web__contents img{
+  /*height: 12vw;*/
+  border: solid 1px #f5f5f5;
+}
+/**/
+
+/*ad*/
+.ad{
+  width: 100%;
+  height: 20vw;
+  margin: 0 auto;
+  display: table;
+  border-collapse:separate;
+  border-spacing: 3vw 0;
+  /*background: orange;*/
+}
+
+.open__layout{
+  display: table-cell;
+  padding-top: 10vw;
+}
+
+.open__modal{
+  display: inline;
+}
+
+.open__modal img{
+  height: 12vw;
+  border: solid 1px #f5f5f5;
+}
+/**/
+
+
+.photograph{
+  height: 20vw;
+  /*background:red;*/
+}
+
+.photograph ul{
+  width: 95%;
+  height: 50vh;
+  margin: 0 auto;
+  padding-top: 10vw;
+}
+
+.photograph li{
+  float: left;
+  margin-right: 3%;
+}
+
+.photograph li:last-child{
+  content: "";
+  width: 0;
+  height: 0;
+  margin-right: 0;
+}
+
+.photograph img{
+  height: 9vw;
+  margin: 0 auto;
+}
+
+.other{
+  height: 30vw;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.other li{
+  width: 13%;
+  display: inline-block;
+  margin: 0 3%;
+  padding-top: 10vw;
+  /*background: pink;*/
+}
+
+.other img{
+  width:  100%;
+  border: solid 1px #f5f5f5;
+}
+
+.profile{
+  width: 100%;
+  margin-top: 20vh;
+}
+
+.profile h1{
+  font-size: 2vw;
+  font-weight: 300;
+}
+
+.prof-bg{
+  width: 100%;
+  opacity: 0.8;
+}
+
+.prof__fixed{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.prof__contents{
+  width: 100%;
+  display: inline-block;
+  margin: 50vh 0;
+}
+
+.about-me, .career{
+  float: left;
+  width: 20%;
+  height: 30vw;
+  padding: 50px 30px;
+  line-height: 2vw;
+  margin: 10vh 12%;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.career ul{
+  margin-top: 8vh;
+}
+
+.prof__contents:after{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+.footer{
+  height: 32vh;
+  margin-top: 10vh;
+  background: #fff;
+}
+
+.footer h1{
+  width: 80%;
+  font-weight: 200;
+  margin: 0 auto;
+  padding-top: 10vh
+}
+
+.copyright{
+  margin-top: 10vh;
+  text-align: center;
+}
+
+/*.copyright::after{
+  content: "";
+  display: block;
+  width: 15%;
+  height: 2px;
+  margin: 3px auto;
+  background: #000;
+}*/
+
+#menu{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#menu img{
+  width: 30px;
+}

@@ -1,0 +1,201 @@
+/*aタグ全体*/
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  cursor: pointer;
+}
+
+.main-nav a{
+  position: relative;
+  transition: .8s;
+}
+
+.main-nav a::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #000;
+	transition: .8s;
+}
+
+.main-nav a:hover::after {
+	width: 100%;
+}
+
+.contents-nav a:hover{
+  opacity: 0.5;
+}
+
+#menu a{
+    color: #000;
+    text-decoration: none;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+
+.web__contents a:hover{
+  width: 100%;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+figure.snip1353 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 1%;
+  color: #fff;
+  text-align: center;
+}
+
+figure.snip1353 img{
+  height: 12vw;
+}
+
+figure.snip1353 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+figure.snip1353 img {
+  opacity: 1;
+}
+
+figure.snip1353:after,
+figure.snip1353:before {
+  background: #000;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  content: '';
+  opacity: 0.5;
+  -webkit-transition: all 0.55s ease-in-out;
+  transition: all 0.55s ease-in-out;
+  z-index: 1;
+}
+figure.snip1353:after {
+  top: 0;
+  left: 0;
+  -webkit-transform: skew(-45deg) translateX(-150%);
+  transform: skew(-45deg) translateX(-150%);
+}
+figure.snip1353:before {
+  right: 0;
+  bottom: 0;
+  -webkit-transform: skew(-45deg) translateX(150%);
+  transform: skew(-45deg) translateX(150%);
+}
+figure.snip1353 figcaption {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+figure.snip1353 h2,
+figure.snip1353 p {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+figure.snip1353 h2 {
+  padding: 0 30px;
+  font-weight: 400;
+  font-size: 1.5vw;
+  letter-spacing: 0.2em;
+  /*text-transform: uppercase;*/
+}
+
+figure.snip1353 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+figure.snip1353:hover img,
+figure.snip1353.hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+figure.snip1353:hover:after,
+figure.snip1353.hover:after {
+  -webkit-transform: skew(-45deg) translateX(-50%);
+  transform: skew(-45deg) translateX(-50%);
+}
+
+figure.snip1353:hover:before,
+figure.snip1353.hover:before {
+  -webkit-transform: skew(-45deg) translateX(50%);
+  transform: skew(-45deg) translateX(50%);
+}
+
+figure.snip1353:hover figcaption h2,
+figure.snip1353.hover figcaption h2,
+figure.snip1353:hover figcaption p,
+figure.snip1353.hover figcaption p {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+figure.snip1353:hover figcaption h2,
+figure.snip1353.hover figcaption h2 {
+  opacity: 1;
+}
+
+figure.snip1353:hover figcaption p,
+figure.snip1353.hover figcaption p {
+  opacity: 0.7;
+}
+/*http://photoshopvip.net/88174*/
+
+.photograph a:hover{
+  /*background: #000;*/
+  opacity: 0.5;
+}
+
+.snip1352 {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  /*min-width: 255px;
+  max-width: 315px;
+  height: 220px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);*/
+}
+
+.snip1352 img {
+  /*max-width: 100%;*/
+  vertical-align: top;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.snip1352:hover img,
+.snip1352.hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.other a:hover{
+  opacity: 0.5;
+}
