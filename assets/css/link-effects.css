@@ -199,3 +199,7 @@ figure.snip1353.hover figcaption p {
 .other a:hover{
   opacity: 0.5;
 }
+
+.close_modal a:hover{
+  opacity: 0.5;
+}

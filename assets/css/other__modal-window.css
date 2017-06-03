@@ -32,49 +32,80 @@ body {
   overflow: auto;
   z-index: 101;
   width: 100%;
+  background: #fff;
   /* スマホでスワイプして指を離すまでの間下部の背景が無くなるため余分に指定 */
   height: calc(100% + 100px);
-  /*background: rgba(0, 0, 0, 0.5);
-  border-bottom: 100px solid transparent;*/
-  cursor: pointer;
   opacity: 1;
 }
 
-.ad__description{
-  width: 40%;
-	height: 50vh;
-	display: inline-block;
-	text-align: left;
-	padding-top: 10vw;
-	margin-left: 20%;
+.other__modal-content{
+  width: 80%;
+  margin: 0 auto;
+  /*background: orange;*/
 }
 
-.ad__description h1{
-  font-size: 1vw;
-  letter-spacing: 0.2em;
-}
-
-.ad__description p{
-	font-size: 1.3vw;
-}
-
-.modalwindow ul{
-  display: inline;
+.other__description{
   width: 50%;
 }
 
-.modalwindow.no_overlay_close {
-  cursor: default;
+.other__description h1{
+  font-size: 1.3vw;
+  letter-spacing: 0.2em;
+  padding-top: 5vw;
 }
-/*
+
+.other__description h2{
+  font-size: 2vw;
+  letter-spacing: 0.2em;
+}
+
+.business-card__img{
+  width: 100%;
+  text-align: center;
+  padding-top: 10vw;
+}
+
+.business-card__img img{
+  width: 60%;
+}
+
+.band-logo__img img{
+  width: 30%;
+  margin-top: 5vw;
+}
+
+.band-logo__img img.band-logo{
+  float: left;
+}
+
+.band-logo__img img.band__mockup{
+  margin-left: 30%;
+  margin-top: -10vw;
+}
+
+.branding__img{
+  width: 90%;
+  margin: 8vw auto;
+  text-align: center;
+}
+
+.branding__img img{
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  width: 60%;
+}
+
+.branding__img img.clipdetrip-logo{
+  margin: 0 auto;
+  width: 50%;
+}
+
+.other__description p{
+  width: 75%;
+}
+
 .modalwindow.lock .close_modal {
   background: #ccc;
-}*/
-
-.close_modal img{
-  width: 30px;
-  display: inline-block;
-  margin: 0;
 }
 
 .modalwindow .modal__body {
@@ -83,28 +114,15 @@ body {
   left: 0%;
   top: 0;
   width: 100%;
-  height: 200vh;
+  /*height: 200vh;*/
   margin-left: 0;
   margin-bottom: 10px;
   background: #fff;
-  cursor: default;
-  /*box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);*/
   transform: translateY(-20px);
   animation: 200ms modalwindow_body_out;
 }
 
-.ad__modal-content img{
-  width: 30%;
-  margin: 0;
-  padding: 0;
-  border: solid 1px #f5f5f5;
-}
-
-.ad__modal-content li{
-  display: inline-block;
-}
-
-.modalwindow .modal__body .ad__modal-content {
+.modalwindow .modal__body .other__modal-content {
   padding: 20px;
 }
 
@@ -113,25 +131,17 @@ body {
   animation: 400ms modalwindow_body_in;
 }
 
-.modalwindow_header_close {
-  /* 右上に表示する×ボタン */
+.close_modal{
+  display: block;
   position: absolute;
+  top: 0;
   right: 0;
-  top: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
+  padding: 5px;
 }
-
 
 .close_modal img{
-  display: block;
   margin: 0;
-  width: 30px;
-}
-
-.close_modal p{
-  font-size: 0.5vw;
-  letter-spacing: 0.3em;
-  margin: 0;
+  top: 0;
+  width: 20px;
+  padding: 5px;
 }

@@ -86,3 +86,7 @@
 	width: 20px;
 	padding: 5px;
 }
+
+#modal-close a:hover{
+  opacity: 0.5;
+}

@@ -32,28 +32,78 @@ body {
   overflow: auto;
   z-index: 101;
   width: 100%;
+  /* スマホでスワイプして指を離すまでの間下部の背景が無くなるため余分に指定 */
   height: calc(100% + 100px);
-  cursor: pointer;
-  opacity: 1;
-  text-align: center;
   background: #fff;
+  opacity: 1;
 }
 
 .ad__modal-content{
-  width: 70%;
-  margin: 8vw auto;
-  display: table;
-  background: orange;
+  width: 80%;
+  margin: 0 auto;
+  /*background: orange;*/
+}
 
+.ad__images{
+  /*background: pink;*/
+  margin: 0 auto;
+}
+
+.ad__images--v2{
+  /*background: pink;*/
+  margin: 0 auto;
+}
+
+.ad__img{
+  height: 40vw;
+  float: left;
+  border: solid 1px #f5f5f5;
+  margin-left: 10vw;
+  margin-top: 4vw;
+}
+
+.ad__images--v2 ul{
+  width: 100%;
+  display: inline;
+  margin-left: 5vw;
+  margin-bottom: 10vw;
+  background: red;
+}
+
+.ad__images--v2 li{
+  float: left;
+  display: inline-block;
+  padding-top: 5vw;
+  margin-left: 1%;
+}
+
+.ad__img--v2{
+  height: 25vw;
+  display: inline-block;
+  margin-top: 4vw;
+  margin-right: 3%;
+}
+
+.ad__mockup{
+  display: inline-block;
+  margin: 10vw 10vw;
+  width: 80%;
+}
+
+.mockup--v2{
+  display: block;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vw;
+  width: 80%;
 }
 
 .ad__description{
+  padding-top: 20vw;
   width: 40%;
-  height: 70vh;
-	display: table-cell;
-  vertical-align: middle;
-	text-align: left;
-  background: pink;
+  float: left;
+  text-align: center;
+  /*background: red;*/
 }
 
 .ad__description h1{
@@ -65,20 +115,8 @@ body {
 	font-size: 1vw;
 }
 
-
-
-.modalwindow.no_overlay_close {
-  cursor: default;
-}
-
 .modalwindow.lock .close_modal {
   background: #ccc;
-}
-
-.close_modal img{
-  width: 30px;
-  display: inline;
-  margin: 0;
 }
 
 .modalwindow .modal__body {
@@ -94,53 +132,7 @@ body {
   animation: 200ms modalwindow_body_out;
 }
 
-.ad__modal-content img{
-  width: 80%;
-  margin: 0;
-  padding: 0;
-  border: solid 1px #f5f5f5;
-}
-
-.ad__modal-content li{
-  display: inline-block;
-}
-
 .modalwindow.is_visible .modal__body {
   transform: translateY(0px);
   animation: 400ms modalwindow_body_in;
-}
-
-.modalwindow_header_close {
-  /* 右上に表示する×ボタン */
-  position: absolute;
-  right: 0;
-  top: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.modalwindow_header_close:before {
-  content: "\D7";
-  color: #ccc;
-}
-
-.close_modal{
-  width: 30px;
-  height: 40px;
-  position: relative;
-  left: 20%;
-  background: red;
-}
-
-.close_modal img{
-  display: block;
-  margin: 0;
-  width: 30px;
-}
-
-.close_modal p{
-  font-size: 0.5vw;
-  letter-spacing: 0.3em;
-  margin: 0;
 }

@@ -181,18 +181,20 @@
         <!-- 広告デザイン -->
         <div id="ad" class="ad">
               <div id="ModalWindow__galaxy" class="modalwindow">
-                <div class="modal__body">
+                <div class="ad__modal--body">
                     <div class="ad__modal-content">
                       <div class="ad__description">
                         <h1>Galaxy Active Neo</h1>
                         <p>スマホ新作モデルの雑誌広告</p>
                         <!-- <p>Galaxyの新作</p> -->
                       </div>
-                        <img src="assets/images/ad/galaxy.jpg">
+                      <div class="ad__images">
+                        <img class="ad__img" src="assets/images/ad/galaxy.jpg">
+                        <img class="ad__mockup" src="assets/images/ad/galaxy_magazin.png">
+                      </div>
                     </div>
-                    <div data-closemodal="ModalWindow__galaxy" class="close_modal footer font-size__min">
-                      <a><img src="assets/images/back.png">
-                        <p>BACK</p></a>
+                    <div data-closemodal="ModalWindow__galaxy" class="close_modal">
+                      <a><img src="assets/images/back.png"></a>
                       </div>
                 </div>
             </div>
@@ -216,10 +218,14 @@
                   <h1>抹茶チーズスティック</h1>
                   <p>好きなお菓子のシリーズ新作の雑誌広告</p>
                 </div>
-                <img src="assets/images/ad/matcha-stic.jpg">
+                <div class="ad__images">
+                  <img class="ad__img" src="assets/images/ad/matcha-stic.jpg">
+                  <img class="ad__mockup" src="assets/images/ad/matcha_mockpu.png">
+                </div>
               </div>
-              <div data-closemodal="ModalWindow__matcha-stic" class="close_modal footer font-size__min">
-                <a><img src="assets/images/back.png"><p>BACK</p></a></div>
+              <div data-closemodal="ModalWindow__matcha-stic" class="close_modal">
+                <a><img src="assets/images/back.png"></a>
+              </div>
           </div>
       </div>
         <!--開くボタン-->
@@ -242,13 +248,17 @@
                     <h1>角川書店</h1>
                     <p>新聞広告のデザイン</p>
                   </div>
-                  <ul>
-                    <li><img src="assets/images/ad/kadokawa2.jpg"></li>
-                    <li><img src="assets/images/ad/kadokawa.jpg"></li>
+                  <div class="ad__images--v2">
+                    <ul>
+                    <li><img class="ad__img--v2" src="assets/images/ad/kadokawa.jpg"></li>
+                    <li><img class="ad__img--v2" src="assets/images/ad/kadokawa2.jpg"></li>
+                    <li><img class="mockup--v2" src="assets/images/ad/kadokawa1_mockup.png"></li>
+                    <li><img class="mockup--v2" src="assets/images/ad/kadokawa2_mockup.png"></li>
                   </ul>
                 </div>
-                <div data-closemodal="ModalWindow__kadokawa-books" class="close_modal footer font-size__min">
-                  <a><img src="assets/images/back.png"><p>BACK</p></a></div>
+                </div>
+                <div data-closemodal="ModalWindow__kadokawa-books" class="close_modal">
+                  <a><img src="assets/images/back.png"></a></div>
                 </div>
             </div>
         <!--開くボタン-->
@@ -269,16 +279,20 @@
               <div class="ad__modal-content">
                 <div class="ad__description">
                 <h1>加茂水族館</h1>
-                <p>加茂水族館PR駅貼りポスター</p>
+                <p>PR駅貼りポスター</p>
               </div>
+              <div class="ad__images--v2">
                 <ul>
-                  <li><img src="assets/images/ad/kamo-aquarium.jpg"></li>
-                  <li><img src="assets/images/ad/kamo-aquarium2.jpg"></li>
-
+                  <li><img class="ad__img--v2" src="assets/images/ad/kamo-aquarium.jpg"></li>
+                  <li><img class="ad__img--v2" src="assets/images/ad/kamo-aquarium2.jpg"></li>
+                  <li><img class="mockup--v2" src="assets/images/ad/kamo__mockup.jpg"></li>
+                  <li><img class="mockup--v2" src="assets/images/ad/kamo2__mockup.jpg"></li>
                 </ul>
               </div>
-              <div data-closemodal="ModalWindow__kamo-aquarium" class="close_modal footer">
-                <a><img src="assets/images/back.png"><p>BACK</p></a></div>
+              </div>
+              <div data-closemodal="ModalWindow__kamo-aquarium" class="close_modal">
+                <a><img src="assets/images/back.png"></a>
+              </div>
           </div>
       </div>
           <!--開くボタン-->
@@ -351,17 +365,16 @@
         <div id="other" class="other">
           <div id="ModalWindow__business-card" class="modalwindow">
             <div class="modal__body">
-                <div class="modal__content">
-                  <div class="description">
-                    <h1>名刺</h1>
-                    <h2></h2>
-                    <p></p>
+                <div class="other__modal-content">
+                  <div class="other__description">
+                    <h1>名刺デザイン</h1>
                   </div>
+                  <div class="business-card__img">
                     <img src="assets/images/other/business-card.svg">
+                  </div>
                 </div>
-                <div data-closemodal="ModalWindow__business-card" class="close_modal footer font-size__min">
-                  <a><div><img src="assets/images/back.png"></div>
-                    <p>BACK</p></a>
+                <div data-closemodal="ModalWindow__business-card" class="close_modal">
+                  <a><img src="assets/images/back.png"></a>
                   </div>
                 </div>
               </div>
@@ -374,17 +387,19 @@
 
           <div id="ModalWindow__theAlchemist" class="modalwindow">
             <div class="modal__body">
-                <div class="modal__content">
-                  <div class="description">
-                    <h1></h1>
-                    <h2></h2>
-                    <p></p>
+                <div class="other__modal-content">
+                  <div class="other__description">
+                    <h1>バンドロゴデザイン</h1>
+                    <h2>the Alchemist</h2>
                   </div>
-                    <img src="assets/images/other/theAlchemist_logo.svg">
+                  <div class="band-logo__img">
+                    <img class="band-logo" src="assets/images/other/theAlchemist_logo.svg">
+                    <img class="band__mockup" src="assets/images/other/theAlchemist_mockup.jpg">
+                  </div>
                 </div>
-                <div data-closemodal="ModalWindow__theAlchemist" class="close_modal footer font-size__min">
+                <div data-closemodal="ModalWindow__theAlchemist" class="close_modal">
                   <a><div><img src="assets/images/back.png"></div>
-                    <p>BACK</p></a>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -397,17 +412,22 @@
 
           <div id="ModalWindow__clipdetrip" class="modalwindow">
             <div class="modal__body">
-                <div class="modal__content">
-                  <div class="description">
-                    <h1></h1>
-                    <h2></h2>
-                    <p></p>
+                <div class="other__modal-content">
+                  <div class="other__description">
+                    <h1>ブランディング</h1>
+                    <h2>Clip de Trip</h2>
+                    <p class="font-size__normal">「クリップの多機能性を広め、生活の中に取り入れてもらう。」をコンセプトに女性をターゲットにした文具雑貨のお店を企画。</p>
                   </div>
-                    <img src="assets/images/other/business-card.jpg">
+                  <div class="branding__img">
+                    <img class="clipdetrip-logo" src="assets/images/other/clipdetrip_logo.svg">
+                    <img class="ct__sb--img" src="assets/images/other/clipdetlip_shopbag.svg" alt="ショップバッグ">
+                    <img class="logo__idea--img" src="assets/images/other/clipdetrip__logo.jpg" alt="ショップバッグ">
+
+                  </div>
                 </div>
-                <div data-closemodal="ModalWindow__clipdetrip" class="close_modal footer font-size__min">
-                  <a><div><img src="assets/images/back.png"></div>
-                    <p>BACK</p></a>
+                <div data-closemodal="ModalWindow__clipdetrip" class="close_modal">
+                  <a><img src="assets/images/back.png">
+                    </a>
                   </div>
                 </div>
               </div>
