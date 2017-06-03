@@ -39,34 +39,41 @@ body {
   background: #fff;
 }
 
+.ad__modal-content{
+  width: 70%;
+  margin: 8vw auto;
+  display: table;
+  background: orange;
+
+}
+
 .ad__description{
-  width: 30%;
-	height: 50vh;
-	display: inline;
+  width: 40%;
+  height: 70vh;
+	display: table-cell;
+  vertical-align: middle;
 	text-align: left;
   background: pink;
 }
 
 .ad__description h1{
-  font-size: 1vw;
+  font-size: 1.3vw;
   letter-spacing: 0.2em;
 }
 
 .ad__description p{
-	font-size: 1.3vw;
+	font-size: 1vw;
 }
 
-.ad__modal-content img{
-  width: 50%;
-}
+
 
 .modalwindow.no_overlay_close {
   cursor: default;
 }
-/*
+
 .modalwindow.lock .close_modal {
   background: #ccc;
-}*/
+}
 
 .close_modal img{
   width: 30px;
@@ -88,7 +95,7 @@ body {
 }
 
 .ad__modal-content img{
-  width: 30%;
+  width: 80%;
   margin: 0;
   padding: 0;
   border: solid 1px #f5f5f5;
@@ -113,12 +120,10 @@ body {
   cursor: pointer;
 }
 
-/*.modalwindow_header_close:before {
+.modalwindow_header_close:before {
   content: "\D7";
-  font-size: 24px;
-  font-family: serif;
   color: #ccc;
-}*/
+}
 
 .close_modal{
   width: 30px;
