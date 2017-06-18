@@ -99,20 +99,21 @@ body {
 }
 
 .ad__description{
-  padding-top: 20vw;
+  padding-top: 5vw;
   width: 40%;
   float: left;
-  text-align: center;
   /*background: red;*/
 }
 
 .ad__description h1{
   font-size: 1.3vw;
   letter-spacing: 0.2em;
+  margin-bottom: 3%;
 }
 
 .ad__description p{
 	font-size: 1vw;
+  margin: 0;
 }
 
 .modalwindow.lock .close_modal {
