@@ -17,6 +17,10 @@ a:hover{
   cursor: pointer;
 }
 
+.mockup{
+  margin: 0;
+}
+
 .top{
   width: 100%;
   height: 100vh;
@@ -320,6 +324,47 @@ a:hover{
   visibility:hidden;
 }
 
+.skill li{
+  display: inline-block;
+  border: solid 1px #000;
+  width: 55px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 1.5%;
+  padding-top: 15px;
+}
+
+.career li{
+  margin-right: 3%;
+}
+
+.birth::after{
+  margin-left: 3%;
+  content: "埼玉県生まれ";
+}
+
+.school::after{
+  margin-left: 3%;
+  content: "さいたま市立大宮北高校に入学";
+}
+
+.design::after{
+  margin-left: 3%;
+  content: "東京デザイナー学院グラフィックデザイン科に入学";
+}
+
+.yamagata::after{
+  margin-left: 3%;
+  content: "山形県に移住";
+}
+
+h4{
+  font-weight: 200;
+  margin: 0;
+  text-align: center;
+}
+
 .footer{
   height: 32vh;
   margin-top: 10vh;
@@ -337,15 +382,6 @@ a:hover{
   margin-top: 10vh;
   text-align: center;
 }
-
-/*.copyright::after{
-  content: "";
-  display: block;
-  width: 15%;
-  height: 2px;
-  margin: 3px auto;
-  background: #000;
-}*/
 
 #menu{
     position: fixed;
